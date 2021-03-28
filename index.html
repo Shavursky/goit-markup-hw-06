@@ -362,6 +362,21 @@
                     </li>
                 </ul>
             </div>
+            <div class="form-footer">
+                <p class="form-title-footer">Подпишитесь на рассылку</p>
+                <form action="#" class="footer-form-modal">
+                    <label class="modal-footer-field">
+                    <span class="modal-form-section">
+                        <input type="email" name="email" class="modal-footer-input" required placeholder="E-mail">                    
+                    </span>                                        
+                    </label>
+                    <button type="submit" class="form-footer-btn">Подписаться
+                        <svg class="social-conect-icon" width="24px" height="24px">
+                            <use href="./image/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <div class="popup is-hidden" data-modal>
@@ -371,6 +386,43 @@
                     <use href="./image/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            <form action="#" class="modal-form">
+                <b class="title-form">Оставьте свои данные, мы вам перезвоним</b>
+                <label class="modal-form-field">
+                    Имя
+                    <span class="modal-form-section">
+                        <input type="text" name="username" class="modal-form-input" required title="tex min 2 simbol">
+                        <svg class="icon-input" width="12px" height="12px">
+                        <use href="./image/sprite.svg#icon-username"></use>
+                        </svg>
+                    </span>                    
+                </label>
+                <label class="modal-form-field">
+                    Телефон
+                    <span class="modal-form-section">
+                        <input type="tel" name="userphone" class="modal-form-input" required pattern="(0-9){3}-(0-9){3}-(0-9){2}-(0-9){2}" title="090-000-00-00">
+                        <svg class="icon-input" width="12px" height="12px">
+                        <use href="./image/sprite.svg#icon-userphone"></use>
+                        </svg>
+                    </span>                                       
+                </label>
+                <label class="modal-form-field">
+                    Почта
+                    <span class="modal-form-section">
+                        <input type="email" name="email" class="modal-form-input" required>
+                    <svg class="icon-input" width="12px" height="12px">
+                        <use href="./image/sprite.svg#icon-useremail"></use>
+                    </svg>
+                    </span>                                        
+                </label>
+                <label class="modal-form-field">
+                    Коментарий
+                   <textarea name="usermessage" class="modal-form-message" placeholder="Введите текст"></textarea>
+                </label>
+                <input type="checkbox" id="user-term" name="agreement" class="agreement modal-form-term visually-hidden">
+                <label for="user-term" class="modal-form-check-desc"><span>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span></label>
+                <button type="submit" class="form-btn">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./modal.js"></script>
