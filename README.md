@@ -1,3 +1,3 @@
-goit-markup-hw-05
+goit-markup-hw-06
 
-GitHub pages https://shavursky.github.io/goit-markup-hw-05/
+GitHub pages https://shavursky.github.io/goit-markup-hw-06/
